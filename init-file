@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+  <style>
+    pre {
+      font-family: monospace;
+      background-color: #fff;
+      width: em(440);
+      padding: 20px 0 5px;
+      border-radius: .25em;
+      box-shadow: .1em .1em .5em rgba(0, 0, 0, .45);
+      counter-reset: line;
+      border-left: 5px solid #558abb;
+    }
+    
+    span.preDesign {
+      display: block;
+      line-height: 2.5rem;
+      padding: 0;
+      margin: -10px 15px;
+    }
+    
+    span.preDesign:before {
+      counter-increment: line;
+      content: counter(line);
+      display: inline-block;
+      border-right: 1px solid #ddd;
+      padding: 0 .5em;
+      margin-right: .5em;
+      color: #888;
+    }
+    
+    span.preDesign:nth-child(even) {
+      background-color: #eee;
+    }
+    
+    span.preDesign:odd {
+      background-color: gray;
+    }
+  </style>
+</head>
+
+<body> 
+  <pre>
+      <span class="preDesign">&lt;p&gt;I hope you have a &lt;b&gt;fantastic day!&lt;/b&gt;&lt;/p&gt;</span>
+      <span class="preDesign">&lt;p&gt;I hope you have a &lt;b&gt;great day!&lt;/b&gt;&lt;/p&gt;</span>
+      <span class="preDesign">&lt;p&gt;I hope you have a &lt;b&gt;super day!&lt;/b&gt;&lt;/p&gt;</span>
+      <span class="preDesign">&lt;p&gt;I hope you have a &lt;b&gt;hopeful day!&lt;/b&gt;&lt;/p&gt;</span>
+      <span class="preDesign">&lt;p&gt;I hope you have a &lt;b&gt;inspirational day!&lt;/b&gt;&lt;/p&gt;</span>
+  </pre> 
+</body>
+
+</html>
